@@ -1,0 +1,50 @@
+# Hyprland Dotfiles — Learning Project
+
+This is my fork and adaptation of a Hyprland configuration based on [Eli Fouts' dotfiles](https://github.com/elifouts/Dotfiles) [web:1].
+
+## ⚠️ Project Status
+
+**Work in progress.** The configuration is functional but not yet fully customized to my needs. This is a learning project to understand how Hyprland rice configurations work.
+
+## 📝 About This Fork
+
+The original configuration was created by [Eli Fouts](https://github.com/elifouts) and is licensed under GPL-3.0 [web:1]. I'm using it as a foundation for learning and configuring my own Wayland environment.
+
+### What's Changed
+
+*(Add your modifications here as you customize the config)*
+
+- [ ] Personal preference adjustments
+- [ ] Keybinding adaptations
+- [ ] Visual customization
+- [ ] ...
+
+## 🛠️ Main Components
+
+This configuration uses the following stack:
+
+- **WM**: Hyprland
+- **Bar**: Waybar
+- **Launcher**: Wofi
+- **Terminal**: Kitty
+- **Lock**: Hyprlock
+- **Logout**: wlogout
+- **Theme**: Pywal (dynamic color schemes)
+- **Wallpaper**: swww + wallpaper selector script
+- **Editor**: Neovim (with plugins)
+
+## 📦 Installation
+
+> **Warning**: Back up your current configs before installing!
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/your-repo.git ~/Dotfiles
+cd ~/Dotfiles
+
+# Install dependencies (Arch Linux)
+yay -S hyprland waybar wofi kitty swww pywal fd hyprlock wlogout
+
+# Copy configs
+# (or use stow/symlinks)
+
