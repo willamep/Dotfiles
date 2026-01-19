@@ -1,14 +1,10 @@
-# Hyprland Dotfiles — Learning Project
+# Hyprland Dotfiles
 
-This is my fork and adaptation of a Hyprland configuration based on [Eli Fouts' dotfiles](https://github.com/elifouts/Dotfiles) [web:1].
+This is my fork and adaptation of a Hyprland configuration based on [Eli Fouts' dotfiles](https://github.com/elifouts/Dotfiles) and is licensed under GPL-3.0 [web:1].
 
 ## ⚠️ Project Status
 
 **Work in progress.** The configuration is functional but not yet fully customized to my needs. This is a learning project to understand how Hyprland rice configurations work.
-
-## 📝 About This Fork
-
-The original configuration was created by [Eli Fouts](https://github.com/elifouts) and is licensed under GPL-3.0 [web:1]. I'm using it as a foundation for learning and configuring my own Wayland environment.
 
 ### What's Changed
 
@@ -39,12 +35,13 @@ This configuration uses the following stack:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo.git ~/Dotfiles
+git clone https://github.com/willamep/your-repo.git ~/Dotfiles
 cd ~/Dotfiles
 
 # Install dependencies (Arch Linux)
-yay -S hyprland waybar wofi kitty swww pywal fd hyprlock wlogout
+sudo pacman -S hyprland kitty dunst xdg-desktop-portal-hyprland qt5-wayland qt6-wayland xorg-xwayland pipewire pipewire-pulse wireplumber waybar wofi swww python-pywal grim slurp wl-clipboard
 
 # Copy configs
-# (or use stow/symlinks)
+cp -r ~/Dotfiles/.config/* ~/.config/
+# Or use stow/symlinks
 
