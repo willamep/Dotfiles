@@ -1,24 +1,11 @@
 # Hyprland Dotfiles
-
-This is my fork and adaptation of a Hyprland configuration based on [Eli Fouts' dotfiles](https://github.com/elifouts/Dotfiles) and is licensed under GPL-3.0 [web:1].
+This is my fork and adaptation of a Hyprland configuration based on [Eli Fouts' dotfiles](https://github.com/elifouts/Dotfiles) and is licensed under GPL-3.0.
 
 ## ⚠️ Project Status
-
 **Work in progress.** The configuration is functional but not yet fully customized to my needs. This is a learning project to understand how Hyprland rice configurations work.
 
-### What's Changed
-
-*(Add your modifications here as you customize the config)*
-
-- [ ] Personal preference adjustments
-- [ ] Keybinding adaptations
-- [ ] Visual customization
-- [ ] ...
-
 ## 🛠️ Main Components
-
 This configuration uses the following stack:
-
 - **WM**: Hyprland
 - **Bar**: Waybar
 - **Launcher**: Wofi
@@ -30,9 +17,7 @@ This configuration uses the following stack:
 - **Editor**: Neovim (with plugins)
 
 ## 📦 Installation
-
 > **Warning**: Back up your current configs before installing!
-
 ```bash
 # Clone the repository
 git clone https://github.com/willamep/your-repo.git ~/Dotfiles
@@ -44,4 +29,3 @@ sudo pacman -S hyprland kitty dunst xdg-desktop-portal-hyprland qt5-wayland qt6-
 # Copy configs
 cp -r ~/Dotfiles/.config/* ~/.config/
 # Or use stow/symlinks
-
