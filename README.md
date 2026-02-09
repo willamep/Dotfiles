@@ -21,11 +21,9 @@ This configuration uses the following stack:
 ```bash
 # Clone the repository
 git clone https://github.com/willamep/your-repo.git ~/Dotfiles
-cd ~/Dotfiles
 
 # Install dependencies (Arch Linux)
 sudo pacman -S hyprland kitty dunst xdg-desktop-portal-hyprland qt5-wayland qt6-wayland xorg-xwayland pipewire pipewire-pulse wireplumber waybar wofi swww python-pywal grim slurp wl-clipboard
 
-# Copy configs
-cp -r ~/Dotfiles/.config/* ~/.config/
-# Or use stow/symlinks
+# Create back up your current configs and start script
+chmod +x create_symlinks.sh && ./create_symlinks.sh
