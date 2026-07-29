@@ -24,13 +24,25 @@ layouts:
 - `Caps Lock` switches between English and Russian.
 - `Right Alt` acts as `Option` and provides the additional macOS symbols.
 - Punctuation in the Russian layout follows the macOS layout.
+- Physical `Command`/`Win` acts as `Control` system-wide, so all native
+  application shortcuts (`Command+C/V/T/W`, undo, save, search, etc.) work
+  without per-application configuration.
+- Physical `Control` is reserved for terminal control in Kitty (`Ctrl+C`,
+  `Ctrl+Z`, `Ctrl+A`, Ctrl with arrows, etc.).
+- In Kitty, `Command+C/V` copies and pastes instead of sending terminal
+  control sequences.
+- In every application, `Option+Backspace` deletes the previous word and
+  `Command+Backspace` deletes to the beginning of the line. Terminal windows
+  automatically receive their native `Ctrl+W`/`Ctrl+U` equivalents.
+- Left `Option` (`Alt`) controls Hyprland and switches workspaces with
+  `Option + Left/Right`.
 
 The settings are in `.config/hypr/hyprland.conf`:
 
 ```ini
 kb_layout = us,ru
 kb_variant = mac,mac
-kb_options = grp:caps_toggle
+kb_options = grp:caps_toggle,ctrl:swap_lwin_lctl,ctrl:swap_rwin_rctl
 ```
 
 ## 📦 Installation
