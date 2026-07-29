@@ -28,15 +28,19 @@ layouts:
   application shortcuts (`Command+C/V/T/W`, undo, save, search, etc.) work
   without per-application configuration.
 - Physical `Control` is forwarded globally as Control (`Ctrl+C`, `Ctrl+Z`,
-  `Ctrl+A`, Ctrl with arrows, etc.), including to the embedded PyCharm
+  `Ctrl+A`, etc.), including to the embedded PyCharm
   terminal. Physical keycodes make these shortcuts work in both layouts.
 - In Kitty, `Command+C/V` copies and pastes instead of sending terminal
   control sequences.
 - In every application, `Option+Backspace` deletes the previous word and
   `Command+Backspace` deletes to the beginning of the line. Terminal windows
   automatically receive their native `Ctrl+W`/`Ctrl+U` equivalents.
-- Left `Option` (`Alt`) controls Hyprland and switches workspaces with
-  `Option + Left/Right`.
+- `Ctrl+Left/Right` switches to the previous/next workspace.
+- `Option+arrows` navigates by words or paragraphs in text.
+- `Command+Left/Right` navigates to the beginning/end of a line, while
+  `Command+Up/Down` navigates to the beginning/end of a document.
+- Left `Option` (`Alt`) remains the Hyprland main modifier for all other
+  window-management shortcuts.
 
 The settings are in `.config/hypr/hyprland.conf`:
 
