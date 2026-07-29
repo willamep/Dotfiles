@@ -16,6 +16,23 @@ This configuration uses the following stack:
 - **Wallpaper**: swww + wallpaper selector script
 - **Editor**: Neovim (with plugins)
 
+## ⌨️ Keyboard layout
+
+Hyprland uses the Macintosh variants of the English and Russian XKB
+layouts:
+
+- `Caps Lock` switches between English and Russian.
+- `Right Alt` acts as `Option` and provides the additional macOS symbols.
+- Punctuation in the Russian layout follows the macOS layout.
+
+The settings are in `.config/hypr/hyprland.conf`:
+
+```ini
+kb_layout = us,ru
+kb_variant = mac,mac
+kb_options = grp:caps_toggle
+```
+
 ## 📦 Installation
 > **Warning**: Back up your current configs before installing!
 ```bash
