@@ -39,6 +39,13 @@ layouts:
 - `Option+arrows` navigates by words or paragraphs in text.
 - `Command+Left/Right` navigates to the beginning/end of a line, while
   `Command+Up/Down` navigates to the beginning/end of a document.
+- `Command+Tab` cycles applications by focus history; `Command+Shift+Tab`
+  cycles in the opposite direction.
+- A single `Option+Tab` uses Hyprland's previous-workspace tracking. Further
+  consecutive presses continue through older workspaces in focus history;
+  `Option+Shift+Tab` moves backwards through the active cycle.
+- `Ctrl+Tab` switches to the next browser tab; `Ctrl+Shift+Tab` switches to
+  the previous tab.
 - Left `Option` (`Alt`) remains the Hyprland main modifier for all other
   window-management shortcuts.
 
