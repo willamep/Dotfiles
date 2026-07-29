@@ -27,8 +27,9 @@ layouts:
 - Physical `Command`/`Win` acts as `Control` system-wide, so all native
   application shortcuts (`Command+C/V/T/W`, undo, save, search, etc.) work
   without per-application configuration.
-- Physical `Control` is reserved for terminal control in Kitty (`Ctrl+C`,
-  `Ctrl+Z`, `Ctrl+A`, Ctrl with arrows, etc.).
+- Physical `Control` is forwarded globally as Control (`Ctrl+C`, `Ctrl+Z`,
+  `Ctrl+A`, Ctrl with arrows, etc.), including to the embedded PyCharm
+  terminal. Physical keycodes make these shortcuts work in both layouts.
 - In Kitty, `Command+C/V` copies and pastes instead of sending terminal
   control sequences.
 - In every application, `Option+Backspace` deletes the previous word and
@@ -44,6 +45,20 @@ kb_layout = us,ru
 kb_variant = mac,mac
 kb_options = grp:caps_toggle,ctrl:swap_lwin_lctl,ctrl:swap_rwin_rctl
 ```
+
+### PyCharm embedded terminal
+
+PyCharm handles IDE shortcuts before its embedded terminal. To allow
+`Ctrl+A`, `Ctrl+E`, `Ctrl+U` and the other shell shortcuts to reach the
+terminal, enable:
+
+```text
+Settings → Tools → Terminal → Override IDE shortcuts
+```
+
+This setting is required in addition to the Hyprland modifier forwarding.
+Without it, PyCharm may execute an IDE action instead of sending the shortcut
+to the focused terminal session.
 
 ## 📦 Installation
 > **Warning**: Back up your current configs before installing!
